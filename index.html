@@ -1,0 +1,68 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	
+  <head>
+    <title>Simon Game</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+        
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
+        
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0">
+  </head>
+	
+  <body>
+    <header></header>
+
+    <audio id="audio0">
+      <source src="https://s3.amazonaws.com/freecodecamp/simonSound1.mp3" type="audio/mpeg">
+      Your browser does not support the audio element
+    </audio>
+    <audio id="audio1">
+      <source src="https://s3.amazonaws.com/freecodecamp/simonSound2.mp3" type="audio/mpeg">
+      Your browser does not support the audio element
+    </audio>
+    <audio id="audio2">
+      <source src="https://s3.amazonaws.com/freecodecamp/simonSound3.mp3" type="audio/mpeg">
+      Your browser does not support the audio element
+    </audio>
+    <audio id="audio3">
+      <source src="https://s3.amazonaws.com/freecodecamp/simonSound4.mp3" type="audio/mpeg">
+      Your browser does not support the audio element
+    </audio>
+    <div class="jumbotron-fluid">
+      <div class="container">
+        <div id="game-area" class="row justify-content-center">
+          <div id="0" class="pads green-btn"></div>
+          <div id="1" class="pads red-btn"></div>
+          <div id="2" class="pads yellow-btn"></div>
+          <div id="3" class="pads blue-btn"></div>
+          <div id="center-area">
+            <h3 class="title">Simon<sup>&#174;</sup></h3>
+            <div id="check-strict"></div>
+            <p id="count">--</p>
+            <button id="start" type="button"></button>
+            <button id="strict" type="button"></button>
+            <pre class="center-text">COUNT      START  STRICT</pre>
+            <p class="inline left-face">OFF</p>
+            <label class="switch">
+              <input id="on-off" type="checkbox">
+              <span class="slider"></span>
+            </label>
+            <p class="inline">ON</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer></footer>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	  <script src="script.js"></script>
+  </body>
+    
+</html>
