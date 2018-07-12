@@ -2,8 +2,9 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto+Mono);
 
 .jumbotron-fluid {
-  background: #EDF2F4;
-  padding: 75px 0;
+  min-height: 100vh;
+  background: url('https://images.pexels.com/photos/164005/pexels-photo-164005.jpeg?auto=compress&cs=tinysrgb&h=1000');
+  padding: 100px 0;
 }
 #game-area {
   margin: 0 auto;
@@ -18,29 +19,29 @@
   position: relative;
   height: 245px;
   width: 245px;
-  border: solid 10px #272825;
+  border: solid 12px #272825;
   z-index: 8;
 }
 .green-btn {
-  background: #006600;
+  background: hsl(135, 85%, 40%);
   border-top-left-radius: 240px;
   -webkit-transition: .5s;
   transition: .5s;
 }
 .red-btn {
-  background: #660000;
+  background: hsl(0, 90%, 35%);
   border-top-right-radius: 240px;
   -webkit-transition: .5s;
   transition: .5s;
 }
 .yellow-btn {
-  background: #999900;
+  background: hsl(50, 90%, 45%);
   border-bottom-left-radius: 240px;
   -webkit-transition: .5s;
   transition: .5s;
 }
 .blue-btn {
-  background: #272e6b;
+  background: hsl(215, 75%, 30%);
   border-bottom-right-radius: 240px;
   -webkit-transition: .5s;
   transition: .5s;
@@ -50,7 +51,7 @@
   height: 225px;
   margin-top: 135px;
   background: white;
-  border: solid 7px #272825;
+  border: solid 8px #272825;
   border-radius: 125px;
   position: absolute;
   z-index: 10;
@@ -158,22 +159,22 @@ input:checked + .slider:before {
   transform: translateX(26px);
 }
 .highlight.green-btn {
-  background: #00ff00;
-  -webkit-transition: .5s;
-  transition: .5s;
+  background: radial-gradient(hsl(135, 100%, 70%), hsl(135, 85%, 40%));
+  -webkit-transition: .4s;
+  transition: .4s;
 }
 .highlight.red-btn {
-  background: red;
-  -webkit-transition: .5s;
-  transition: .5s;
+  background: radial-gradient(hsl(0, 100%, 65%), hsl(0, 90%, 35%));
+  -webkit-transition: .4s;
+  transition: .4s;
 }
 .highlight.yellow-btn {
-  background: #ffff00;
-  -webkit-transition: .5s;
-  transition: .5s;
+  background: radial-gradient(hsl(50, 100%, 75%), hsl(50, 90%, 45%));
+  -webkit-transition: .4s;
+  transition: .4s;
 }
 .highlight.blue-btn {
-  background: #0066ff;
-  -webkit-transition: .5s;
-  transition: .5s;
+  background: radial-gradient(hsl(215, 100%, 60%), hsl(215, 75%, 30%));
+  -webkit-transition: .4s;
+  transition: .4s;
 }

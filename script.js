@@ -162,9 +162,9 @@ $(document).ready(() => {
       if(!isItOn) { break; }
       $("#" + series[i]).addClass("highlight");
       $("#audio" + series[i])[0].play();
-      await sleep(750);
+      await sleep(650);
       $("#" + series[i]).removeClass("highlight");
-      await sleep(300);
+      await sleep(200);
     }
     checkingSeries = false;
     addToSeries = false;
