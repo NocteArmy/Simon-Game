@@ -101,9 +101,11 @@
   box-shadow: 0 2px 2px 1px rgba(0, 0, 0, 0.4);
   background: red;
   margin-left: 12px;
-}
-#start:focus {
   outline: none;
+}
+#start:active {
+  box-shadow: none;
+  transform: translateY(2px);
 }
 #strict {
   cursor: pointer;
@@ -115,9 +117,11 @@
   box-shadow: 0 2px 2px 1px rgba(0, 0, 0, 0.4);
   background: yellow;
   margin-left: 12px;
-}
-#strict:focus {
   outline: none;
+}
+#strict:active {
+  box-shadow: none;
+  transform: translateY(2px);
 }
 .center-text {
   font-size: 12px;
