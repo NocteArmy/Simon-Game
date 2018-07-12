@@ -6,6 +6,8 @@ $(document).ready(() => {
   var series = [];
   var playerSeries = [];
   var counter = 0;
+  var backgroundColors = ['hsl(135, 85%, 40%)', 'hsl(0, 90%, 35%)', 'hsl(50, 90%, 45%)', 'hsl(215, 75%, 30%)'];
+  var highlight = ['hsl(135, 100%, 70%)', 'hsl(0, 100%, 65%)', 'hsl(50, 100%, 75%)', 'hsl(215, 100%, 60%)'];
   
   $("#on-off").on('click', () => {
     if(!isItOn) {
@@ -150,20 +152,20 @@ $(document).ready(() => {
   }
   
   async function flashPad(pad) {
-    $("#" + pad).addClass("highlight");
+    $("#" + pad).css("background", highlight[pad]);
     $("#audio" + pad)[0].play();
     await sleep(100);
-    $("#" + pad).removeClass("highlight");
+    $("#" + pad).css("background", backgroundColors[pad]);
   }
   
   async function flashSeries(series) {
     await sleep(200);
     for(var i = 0; i < series.length; i++) {
       if(!isItOn) { break; }
-      $("#" + series[i]).addClass("highlight");
+      $("#" + series[i]).css("background", highlight[series[i]]);
       $("#audio" + series[i])[0].play();
       await sleep(650);
-      $("#" + series[i]).removeClass("highlight");
+      $("#" + series[i]).css("background", backgroundColors[series[i]]);
       await sleep(200);
     }
     checkingSeries = false;
